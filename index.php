@@ -48,7 +48,6 @@
 	}
 	$stati .= "</ul>\n";
 ?>
-
 <!DOCTYPE html>
 
 <html>
