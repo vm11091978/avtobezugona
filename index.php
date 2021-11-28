@@ -48,6 +48,7 @@
 	}
 	$stati .= "</ul>\n";
 ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -57,7 +58,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="<?=$description?>">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -66,8 +67,15 @@
             <?php
                 require_once "blocks/header.php"
             ?>
-			
-            <nav class="menu">
+
+			<div class="menu-button" id="menu-add">
+				<div><p>&ndash;</p><p>&ndash;</p><p>&ndash;</p></div>
+			</div>
+			<div class="menu-button" id="menu-del">
+				<div><p>&times;</p></div>
+			</div>
+
+            <nav class="menu" id="menu">
                 <ul>
 					<?php
 						require "blocks/menu.php";
