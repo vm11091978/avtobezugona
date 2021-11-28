@@ -25,5 +25,5 @@
 </div>
 
 <div class="banner">
-    <a href="https://avtobezugona.ru/"><img src="images/banner.jpg" alt="Баннер"/></a>
+    <a href="https://polyphyletic-prints.000webhostapp.com"><img src="images/banner.jpg" alt="Баннер"/></a>
 </div>
