@@ -8,7 +8,7 @@
 	<div class="search">
 		<h3>Поиск по сайту</h3>
 		<label>Ключевое слово / фраза / URL страницы:</label>
-		<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://avtobezugona.ru/poisk.html','arrow':false,'bg':'transparent','fontsize':16,'fg':'#000000','language':'ru','logo':'rb','publicname':'Введите запрос','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2301097,'input_fg':'#000066','input_bg':'#fdfadc','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Введите запрос','input_placeholderColor':'#5f5f5f','input_borderColor':'#eaeaea'}">
+		<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://avtobezugona.tk/poisk.html','arrow':false,'bg':'transparent','fontsize':16,'fg':'#000000','language':'ru','logo':'rb','publicname':'Введите запрос','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2301097,'input_fg':'#000066','input_bg':'#fdfadc','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Введите запрос','input_placeholderColor':'#5f5f5f','input_borderColor':'#eaeaea'}">
 			<form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8">
 				<input type="hidden" name="searchid" value="2301097"/>
 				<input type="hidden" name="l10n" value="ru"/>
