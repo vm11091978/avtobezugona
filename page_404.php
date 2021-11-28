@@ -54,7 +54,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="К сожалению, запрашиваемая Вами страница не найдена. Пожалуйста, перейдите в существующий раздел">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
