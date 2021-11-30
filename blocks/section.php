@@ -55,23 +55,22 @@
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev button" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next button" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
 
         <!-- The dots/circles -->
         <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot button" onclick="currentSlide(1)"></span>
+            <span class="dot button" onclick="currentSlide(2)"></span>
+            <span class="dot button" onclick="currentSlide(3)"></span>
+            <span class="dot button" onclick="currentSlide(4)"></span>
+            <span class="dot button" onclick="currentSlide(5)"></span>
+            <span class="dot button" onclick="currentSlide(6)"></span>
+            <span class="dot button" onclick="currentSlide(7)"></span>
+            <span class="dot button" onclick="currentSlide(8)"></span>
+            <span class="dot button" onclick="currentSlide(9)"></span>
+            <span class="dot button" onclick="currentSlide(10)"></span>
         </div>
     </div>
 </div>
