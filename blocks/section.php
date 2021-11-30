@@ -4,55 +4,17 @@
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 10</div>
-                <img src="images/slide_1.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 10</div>
-                <img src="images/slide_2.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 10</div>
-                <img src="images/slide_3.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 10</div>
-                <img src="images/slide_4.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 10</div>
-                <img src="images/slide_5.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 10</div>
-                <img src="images/slide_6.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">7 / 10</div>
-                <img src="images/slide_7.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">8 / 10</div>
-                <img src="images/slide_8.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">9 / 10</div>
-                <img src="images/slide_9.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">10 / 10</div>
-                <img src="images/slide_10.jpg" style="width:100%">
-            </div>
+			<?php
+				for ($i = 1; $i <= 10; $i++) {
+			// HTML код внутри цикла повторится 10 раз:
+			?>
+				<div class="mySlides fade">
+					<div class="numbertext"><?=$i?> / 10</div>
+					<img src="images/slide_<?=$i?>.jpg" style="width:100%">
+				</div>
+			<?php
+				}
+			?>
 
             <!-- Next and previous buttons -->
             <a class="prev button" onclick="plusSlides(-1)">&#10094;</a>
@@ -61,16 +23,11 @@
 
         <!-- The dots/circles -->
         <div class="dots">
-            <span class="dot button" onclick="currentSlide(1)"></span>
-            <span class="dot button" onclick="currentSlide(2)"></span>
-            <span class="dot button" onclick="currentSlide(3)"></span>
-            <span class="dot button" onclick="currentSlide(4)"></span>
-            <span class="dot button" onclick="currentSlide(5)"></span>
-            <span class="dot button" onclick="currentSlide(6)"></span>
-            <span class="dot button" onclick="currentSlide(7)"></span>
-            <span class="dot button" onclick="currentSlide(8)"></span>
-            <span class="dot button" onclick="currentSlide(9)"></span>
-            <span class="dot button" onclick="currentSlide(10)"></span>
+			<?php
+				for ($i = 1; $i <= 10; $i++) {
+					echo ' <span class="dot button" onclick="currentSlide(' .$i. ')"></span> ';
+				}
+			?>
         </div>
     </div>
 </div>
