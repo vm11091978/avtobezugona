@@ -181,19 +181,19 @@ header {
 @media only screen and (min-width: 680px) {
 	.hdr-title p {font-size: 1.5em;}
 }
-.hdr-title .hdr-p1 {
+.hdr-p1 {
     height: 30px;
     margin-left: 8%;
 }
 @media only screen and (min-width: 400px) {
-	.hdr-title .hdr-p1 {margin-left: 16%;}
+	.hdr-p1 {margin-left: 16%;}
 }
-.hdr-title .hdr-p2 {
+.hdr-p2 {
     height: 54px;
     margin-left: 8%;
 }
 @media only screen and (min-width: 400px) {
-	.hdr-title .hdr-p2 {margin-left: 20%;}
+	.hdr-p2 {margin-left: 20%;}
 }
 
 /* =====================
@@ -261,8 +261,8 @@ nav ul {
 	nav ul {flex-direction: row;}
 }
 @media only screen and (min-width: 920px) {
-	section .rtr-block2 {display: table-cell; width: 42%; vertical-align: middle;}
-	section .rtr-text {margin-right: 8%;}
+	.rtr-block2 {display: table-cell; width: 42%; vertical-align: middle;}
+	.rtr-text {margin-right: 8%;}
 }
 nav ul li {
 /*	display: table-cell; не работает в IE*/
@@ -349,15 +349,15 @@ section {
     background-color: #eee;
     border-top: 1px solid #ccc;
 }
-section .rtr-block1 {
+.rtr-block1 {
 	display: block;
 	width: calc(100% - 2*(30% - 96px));
 	margin-left: calc(30% - 96px); /* плавно уменьшим поле от ~15% до 0 при ширине экрана 320px */
 }
 @media only screen and (min-width: 920px) {
-	section .rtr-block1 {display: table-cell; width: 58%;}
+	.rtr-block1 {display: table-cell; width: 58%;}
 }
-section .rtr-screen {
+.rtr-screen {
     position: relative;
     margin: 7%;
 }
@@ -366,7 +366,7 @@ section .rtr-screen {
 }
 
 /* Slideshow container */
-section .rtr-screen .slideshow-container {
+.slideshow-container {
     position: relative;
     margin: auto;
     border-top: 6px solid dimgray;
@@ -375,11 +375,11 @@ section .rtr-screen .slideshow-container {
     border-right: 6px solid white;
     border-radius: 10px;
 }
-section .rtr-screen .slideshow-container img {
+.slideshow-container img {
     border-radius: 4px;
     margin-bottom: -3px;
 }
-section .rtr-screen .dots {
+.dots {
     position: absolute;
     width: 100%;
     margin-top: 2.5%;
@@ -460,45 +460,45 @@ section .rtr-screen .dots {
     to {opacity: 1}
 }
 
-section .rtr-block2 {
+.rtr-block2 {
 	display: block;
 	width: 90%;
 	margin-left: 5%;
 }
-section .rtr-text {
+.rtr-text {
 	padding-bottom: 2.4%;
 }
 @media only screen and (min-width: 920px) {
-	section .rtr-block2 {display: table-cell; width: 42%; vertical-align: middle;}
-	section .rtr-text {margin-right: 8%;}
+	.rtr-block2 {display: table-cell; width: 42%; vertical-align: middle;}
+	.rtr-text {margin-right: 8%;}
 }
-section .rtr-text h3 {
+.rtr-text h3 {
     text-align: center;
     font-size: 1.125em;
     padding: 1.2% 0 2.4% 0;
 }
 @media only screen and (min-width: 576px) {
-	section .rtr-text h3 {font-size: 1.25em;}
+	.rtr-text h3 {font-size: 1.25em;}
 }
 @media only screen and (min-width: 920px) {
-	section .rtr-text h3 {font-size: 1.125em;}
+	.rtr-text h3 {font-size: 1.125em;}
 }
 @media only screen and (min-width: 1050px) {
-	section .rtr-text h3 {font-size: 1.25em;}
+	.rtr-text h3 {font-size: 1.25em;}
 }
-section .rtr-text p {
+.rtr-text p {
     text-indent: 4.8%;
     font-size: 1em;
     padding-top: 2.4%;
 }
 @media only screen and (min-width: 576px) {
-	section .rtr-text p {font-size: 1.125em;}
+	.rtr-text p {font-size: 1.125em;}
 }
 @media only screen and (min-width: 920px) {
-	section .rtr-text p {font-size: 1em;}
+	.rtr-text p {font-size: 1em;}
 }
 @media only screen and (min-width: 1050px) {
-	section .rtr-text p {font-size: 1.125em;}
+	.rtr-text p {font-size: 1.125em;}
 }
 
 /* =====================
@@ -539,17 +539,17 @@ main hr {
 	margin-left: 10%;
 }
 @media only screen and (min-width: 400px) {
-	.article .image-left, .article .image-right {width: 35vw;}
-	.article .image-left {float: left; margin-left: 0%; margin-right: 20px;}
-	.article .image-right {float: right; margin-left: 20px;}
+	.image-left, .image-right {width: 35vw;}
+	.image-left {float: left; margin-left: 0%; margin-right: 20px;}
+	.image-right {float: right; margin-left: 20px;}
 }
 @media only screen and (min-width: 600px) {
-	.article .image-left, .article .image-right {float: none; width: 80%; margin-left: 10%;}
+	.image-left, .image-right {float: none; width: 80%; margin-left: 10%;}
 }
 @media only screen and (min-width: 768px) {
-	.article .image-left, .article .image-right {width: 25vw;}
-	.article .image-left {float: left; margin-left: 0%; margin-right: 20px;}
-	.article .image-right {float: right; margin-left: 20px;}
+	.image-left, .image-right {width: 25vw;}
+	.image-left {float: left; margin-left: 0%; margin-right: 20px;}
+	.image-right {float: right; margin-left: 20px;}
 }
 #image_3 {
     width: 100%;
