@@ -280,6 +280,7 @@ nav ul li {
 .menu ul li a {
     border-radius: 6px 6px 0 0;
 	background-color: #eee;
+	padding: 0 5px;
 }
 @media only screen and (min-width: 600px) {
 	.menu ul li a {background-color: transparent;}
