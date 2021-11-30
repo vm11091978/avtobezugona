@@ -3,14 +3,14 @@ let menuAdd = document.getElementById('menu-add');
 let menuDel = document.getElementById('menu-del');
 let menu = document.getElementById('menu'); // let menu = document.getElementsByClassName('menu')[0];
 
-let i = 0;
+let time = 0;
 function animate()
 {
-	if (i < 250) {
-		menu.style.width = i + 'px';
-		i += 5;
+	if (time < 250) {
+		menu.style.width = time + 'px';
+		time += 5;
 		setTimeout("animate()", 20);
-	} else if (i = 250) {
+	} else if (time = 250) {
 		menu.style.width = '100%';
 		menu.style.overflow = 'visible';
 	}
@@ -19,17 +19,17 @@ function animate()
 function deanimate()
 {
 	menu.style.overflow = 'hidden';
-	if (i > 0) {
-		menu.style.width = i + 'px';
-		i -= 5;
+	if (time > 0) {
+		menu.style.width = time + 'px';
+		time -= 5;
 		setTimeout("deanimate()", 20);
-	} else if (i == 0) {
+	} else if (time == 0) {
 		menu.removeAttribute('style'); // удалим аттрибуты вместо того, чтобы изменить: menu.style.display = 'none';
 	}
 }
 
 menuAdd.addEventListener('click', function() {
-	if (i == 0) {
+	if (time == 0) {
 		menuDel.style.zIndex = '3';
 		menu.style.display = 'block';
 		animate();
@@ -37,7 +37,7 @@ menuAdd.addEventListener('click', function() {
 });
 
 menuDel.addEventListener('click', function() {
-	if (i == 250) {
+	if (time == 250) {
 		window.clearTimeout(animate);
 		menuDel.style.zIndex = '1';
 		deanimate();
