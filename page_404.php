@@ -73,7 +73,7 @@
             </nav>
         </header>
 
-        <div class="content-block">
+        <div class="content-block error-block">
             <main>
                 <?php
                     require_once "content/404.php"
