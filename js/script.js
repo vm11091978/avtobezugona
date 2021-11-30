@@ -6,7 +6,7 @@ let menu = document.getElementById('menu'); // let menu = document.getElementsBy
 let i = 0;
 function animate()
 {
-	if (i <= 250) {
+	if (i < 250) {
 		menu.style.width = i + 'px';
 		i += 5;
 		setTimeout("animate()", 20);
@@ -75,8 +75,25 @@ slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
 
+/*
 let timer = setInterval(function(){
     slideIndex++;
     showSlides(slideIndex);
 },
 5000);
+*/
+// Сделаем автоматическое перелистывание слайдов
+function Slideshow() {
+    slideIndex++;
+    showSlides(slideIndex);
+}
+let timer = setInterval(Slideshow, 5000);
+
+// При нажатии на любую кнопку обнулим интервал автоматического перелистывания слайдов
+let buttons = document.getElementsByClassName('button');
+for (i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener('click', function() {
+		clearInterval(timer);
+		timer = setInterval(Slideshow, 5000);
+	});
+}
